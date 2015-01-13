@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lightbackground">
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabHost">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:id="@+id/search"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edt_search_tab1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:inputType="text"
+                        android:maxLength="20"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_category_tab1"
+                            android:text="@string/category"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+
+                        <Button
+                            android:id="@+id/btn_purchase_type_tab1"
+                            android:text="@string/purchase_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+
+                        <Button
+                            android:id="@+id/btn_search_tab1"
+                            android:text="@string/search"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txv_search_condition_tab1"
+                        android:layout_width="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txv_hit_count_tab1"
+                        android:layout_width="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"/>
+
+                    <ListView
+                        android:id="@+id/lstvew_tab1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/post"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/imgbtn_upload_pic_tab2"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"/>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TableRow>
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000000"
+                                    android:text="@string/price"/>
+                                <EditText
+                                    android:id="@+id/edt_price_tab2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000000"
+                                    android:layout_weight="1"
+                                    android:inputType="number"
+                                    android:textColorHint="#000"
+                                    android:hint="@string/up_to_10"
+                                    android:maxLength="10"/>
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000000"
+                                    android:text="@string/title"/>
+                                <EditText
+                                    android:id="@+id/edt_title_tab2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000000"
+                                    android:layout_weight="1"
+                                    android:inputType="text"
+                                    android:textColorHint="#000"
+                                    android:hint="@string/up_to_10"
+                                    android:maxLength="10"/>
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000000"
+                                    android:text="@string/category"/>
+                                <Button
+                                    android:id="@+id/btn_category_tab2"
+                                    android:text="@string/category"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"/>
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000000"
+                                    android:text="@string/description"/>
+                                <EditText
+                                    android:id="@+id/edt_description_tab2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000000"
+                                    android:layout_weight="1"
+                                    android:inputType="text"
+                                    android:textColorHint="#000"
+                                    android:hint="@string/up_to_30"
+                                    android:maxLength="30"/>
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000000"
+                                    android:text="@string/purchase_type"/>
+                                <Button
+                                    android:id="@+id/btn_purchase_type_tab2"
+                                    android:text="@string/purchase_type"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"/>
+                            </TableRow>
+                            <TableRow
+                                android:id="@+id/tblrow_deposit"
+                                android:visibility="gone">
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000000"
+                                    android:text="@string/deposit"/>
+                                <EditText
+                                    android:id="@+id/edt_deposit_tab2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000000"
+                                    android:textColorHint="#000"
+                                    android:layout_weight="1"
+                                    android:inputType="number"
+                                    android:hint="@string/up_to_10"
+                                    android:maxLength="10"/>
+                            </TableRow>
+                        </TableLayout>
+
+                        <Button
+                            android:id="@+id/btn_post_tab2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/post"/>
+                    </LinearLayout>
+                </ScrollView>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>
