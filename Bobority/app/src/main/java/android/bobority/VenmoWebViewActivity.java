@@ -10,7 +10,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.RelativeLayout;
 
-import hackathon.bobority.R;
+import android.bobority.R;
 
 
 public class VenmoWebViewActivity extends Activity

@@ -198,7 +198,7 @@ public class CreateAccount extends ActionBarActivity
 
         });
     }
-    @Override
+  /*  @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -221,7 +221,7 @@ public class CreateAccount extends ActionBarActivity
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
     public static byte[] encode(Bitmap bitmap)
     {
         if(bitmap == null) {
