@@ -69,6 +69,7 @@ public class Home extends Activity {
         setContentView(R.layout.activity_home);
 
         /**** This is a message to check if github updates correctly ***/
+        /**** testtesttest ***/
         createDummyData();
         findViews();
         setTabs();
