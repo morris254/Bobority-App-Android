@@ -68,6 +68,7 @@ public class Home extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        /**** This is a message to check if github updates correctly ***/
         createDummyData();
         findViews();
         setTabs();
