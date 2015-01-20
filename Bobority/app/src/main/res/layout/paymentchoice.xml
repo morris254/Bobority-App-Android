@@ -11,29 +11,12 @@
         android:layout_gravity="center_horizontal"
         android:src="@drawable/step2"/>
     <ImageButton
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:src="@drawable/paypallogo"
-        android:scaleType="fitXY"
-        android:layout_weight=".75"
-        android:id="@+id/payPalButton"
-        android:layout_gravity="center_horizontal"
-        android:background="@android:color/transparent"/>
-    <ImageButton
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight=".8"
-        android:src="@drawable/venmologin"
-        android:id="@+id/venmoButton"
-        android:layout_gravity="center_horizontal"
-        android:background="@android:color/transparent"/>
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight=".75"
+        android:layout_height="wrap_content"
         android:paddingBottom="10dp"
-        android:src="@drawable/cardlogo"
-        android:id="@+id/cardButton"
+        android:src="@drawable/braintreelogo"
+        android:id="@+id/BrainTreeButton"
+	android:onClick="onBraintreeSubmit"
         android:layout_gravity="center_horizontal"
         android:background="@android:color/transparent"/>
 
